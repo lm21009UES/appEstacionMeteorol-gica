@@ -8,33 +8,37 @@ import { getDatabase, ref, child, get } from "https://www.gstatic.com/firebasejs
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAT2sU2BMT--3DNXacnFDJadEgLvzM8g0M",
-  authDomain: "climaapp-79455.firebaseapp.com",
-  projectId: "climaapp-79455",
-  storageBucket: "climaapp-79455.appspot.com",
-  messagingSenderId: "524570460935",
-  appId: "1:524570460935:web:006f176eb727bbe1333ba2",
-  measurementId: "G-NFQ4P23S92"
-};
+    apiKey: "AIzaSyC76RxQgpsJx4CJaXtBVNLlAy0Hv_rtqh4",
+    authDomain: "estacion-meteorologica-3d31b.firebaseapp.com",
+    databaseURL: "https://estacion-meteorologica-3d31b-default-rtdb.firebaseio.com",
+    projectId: "estacion-meteorologica-3d31b",
+    storageBucket: "estacion-meteorologica-3d31b.appspot.com",
+    messagingSenderId: "457196943411",
+    appId: "1:457196943411:web:7fbc88bf881cc195c90b46",
+    measurementId: "G-ZSSFGPJ5EN"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const db = getDatabase(app);
-const exampleRef = ref(db, 'Temperatura');
+const exampleRef = ref(db, 'DatosClima');
 const temperatura = document.getElementById("temperatura");
 const humedad = document.getElementById("Humedad");
+const dth11 = document.getElementById("DTH11");
 const actualizar = document.getElementById("actualizar");
 
 // Ejemplo de cómo acceder a un nodo secundario y obtener datos
 get(exampleRef).then((snapshot) => {
-if (snapshot.exists()) {
-    const data = snapshot.val();
-    temperatura.textContent = data.Celcius;
-    humedad.textContent = data.Humedad;
-} else {
-    console.log("No hay datos disponibles");
-}
+    if (snapshot.exists()) {
+        const data = snapshot.val();
+        console.log(data);
+        temperatura.innerHTML = data.TemperaturaC + " °C<br> "+data.TemperaturaF + " °F";
+        humedad.innerHTML = data.Humedad + " g/kg a.s";
+        dth11.innerHTML = data.TemperaturaDTH11 + " °C";
+    } else {
+        console.log("No hay datos disponibles");
+    }
 }).catch((error) => {
 console.error("Error al obtener datos:", error);
 });
