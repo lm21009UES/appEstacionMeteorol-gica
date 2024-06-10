@@ -1,0 +1,33 @@
+@media (max-width: 600px) {
+  .col-6 .developer-name {
+    font-size: 11px; /* Tamaño del texto del párrafo en pantallas pequeñas */
+    color: rgb(127, 128, 123);
+  }
+  body{
+    height: 100vh;
+  }
+  .col-3{
+    font-size: 10px;
+  }
+  
+}
+body{
+  margin: 0;
+  height: 98vh;
+  background-image: url('./IMG/fondo.jpg'); /* Cambia 'ruta/a/tu/imagen.jpg' por la ruta de tu imagen */
+  background-attachment: fixed; /* Fija la imagen de fondo */
+  background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.65); /* Blanco con 65% de opacidad */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.estilo{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(179, 198, 206);
+}
