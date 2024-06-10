@@ -31,3 +31,9 @@ body{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(179, 198, 206);
 }
+
+img{
+  width: 200px;
+  height: auto;
+  border-radius: 25px;
+}

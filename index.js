@@ -27,6 +27,9 @@ const temperatura = document.getElementById("temperatura");
 const humedad = document.getElementById("Humedad");
 const dth11 = document.getElementById("DTH11");
 const actualizar = document.getElementById("actualizar");
+const cielo = document.getElementById("Cielo");
+const estado = document.getElementById("Estado");
+const imagen = document.getElementById("imgEstado");
 
 // Ejemplo de cómo acceder a un nodo secundario y obtener datos
 get(exampleRef).then((snapshot) => {
@@ -36,6 +39,13 @@ get(exampleRef).then((snapshot) => {
         temperatura.innerHTML = data.TemperaturaC + " °C<br> "+data.TemperaturaF + " °F";
         humedad.innerHTML = data.Humedad + " g/kg a.s";
         dth11.innerHTML = data.TemperaturaDTH11 + " °C";
+        cielo.innerHTML = data.Cielo;
+        estado.innerHTML = data.Estado;
+        if(data.Estado == "despejado"){
+            imagen.setAttribute("src", "./IMG/despejado.jpg");
+        }else{
+            imagen.setAttribute("src", "./IMG/lluvioso.jpg");
+        }
     } else {
         console.log("No hay datos disponibles");
     }
