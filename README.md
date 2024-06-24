@@ -25,11 +25,11 @@ Los cuales provienen de la estructura desarrollada para el proyecto.
      
   Link de la página desarrollada para la estación meteorológica.
 
-     https://lm21009ues.github.io/appEstacionMeteorol-gica/
+  https://lm21009ues.github.io/appEstacionMeteorol-gica/
 
   Link del repositorio donde se encuentra desarrollada la parte del Backend de la Estación meteorológica .
   
-     https://github.com/JohnArbaiza1/Estacion_Meteorologica.git
+  https://github.com/JohnArbaiza1/Estacion_Meteorologica.git
 
   ## Autores 💻📱
    <img src="https://user-images.githubusercontent.com/74038190/219923823-bf1ce878-c6b8-4faa-be07-93e6b1006521.gif" width="300px" >
