@@ -18,3 +18,25 @@ Los cuales provienen de la estructura desarrollada para el proyecto.
   ```
    https://github.com/lm21009UES/appEstacionMeteorol-gica.git
   ```
+
+  ## Aplicacion Web Y Backend de la App
+  
+  <img src="https://user-images.githubusercontent.com/74038190/212748830-4c709398-a386-4761-84d7-9e10b98fbe6e.gif" alt="Umbrella" width="430"/>
+     
+  Link de la página desarrollada para la estación meteorológica.
+
+     https://lm21009ues.github.io/appEstacionMeteorol-gica/
+
+  Link del repositorio donde se encuentra desarrollada la parte del Backend de la Estación meteorológica .
+  
+     https://github.com/JohnArbaiza1/Estacion_Meteorologica.git
+
+  ## Autores 💻📱
+   <img src="https://user-images.githubusercontent.com/74038190/219923823-bf1ce878-c6b8-4faa-be07-93e6b1006521.gif" width="300px" >
+
+* John Elvis Arbaiza Velásquez  <a href="https://github.com/JohnArbaiza1" >JohnArbaiza1 </a>
+* Erick Adony López Meléndez <a href="https://github.com/lm21009UES" > lm21009UES </a>
+* Luis Emilio González Molina <a href="https://github.com/gnz-e" >gnz-e </a>
+* Yahir Ariel Nieto Amaya <a href="https://github.com/YANA021" >YANA021</a>     
+
+## Proyecto realizado con fines educativos 🎓
